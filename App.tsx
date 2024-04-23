@@ -1,16 +1,13 @@
 import React, {FC} from 'react';
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
-import {FONTS} from './src/themes/AppTheme';
+import {NavigationContainer} from '@react-navigation/native';
+import HomeScreen from './src/screens/HomeScreen';
 
 const App: FC = () => {
   return (
-    <SafeAreaView
-      style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text style={{fontFamily: FONTS.Poppins900}}>Welcome page!</Text>
-    </SafeAreaView>
+    <NavigationContainer>
+      <HomeScreen />
+    </NavigationContainer>
   );
 };
 
 export default App;
-
-const styles = StyleSheet.create({});
